@@ -1,6 +1,6 @@
 <?php
 
-$pdo = new PDO("mysql:host=localhost:3306;dbname=jjqioyps_learning","jjqioyps_learning","123456");
+$pdo = new PDO("mysql:host=localhost:3306;dbname=jjqioyps_web_learning","jjqioyps_learning","123456");
 
 if($_POST){
     $name = $_POST['name'];
