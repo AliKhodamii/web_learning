@@ -20,7 +20,7 @@ $todos = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <!-- فرم افزودن تسک جدید -->
     <form action="add.php" method="POST">
         <input type="text" name="title" placeholder="کار جدید..." required>
-        <button type="submit">➕ اضافه کن</button>
+        <button type="submit">➕ Add</button>
     </form>
 
     <!-- لیست تسک‌ها -->
@@ -36,7 +36,7 @@ $todos = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <?= htmlspecialchars($todo['title']) ?>
                 </span>
 
-                <a href="delete.php?id=<?= $todo['id'] ?>" onclick="return confirm('پاک کنم؟')">🗑️</a>
+                <a href="delete.php?id=<?= $todo['id'] ?>" onclick="return confirm('Delete?')">🗑️</a>
             </li>
         <?php endforeach; ?>
     </ul>
